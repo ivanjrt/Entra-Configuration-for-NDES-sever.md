@@ -1,7 +1,7 @@
 # Configuring Application Proxy Configuration
-if all the devices will be locally you can skip this step, otherwise to connect as of now you would need to punch a whole in the firewall,
-to get your scep url out of to the internet, which is not recommended for security reasons. therefore you can add proxy.
-Go to this Azure Active Directory, > Application Proxy > Download Connector Service > Accept terms & Download the app
+if all the devices will be locally you can skip this step, otherwise to connect as of now you would need to punch a whole in the firewall,<br/>
+to get your scep url out of to the internet, which is not recommended for security reasons. therefore you can add proxy.<br/>
+Go to this Azure Active Directory, > Application Proxy > Download Connector Service > Accept terms & Download the app<br/>
 ![image](https://github.com/user-attachments/assets/2ecc3316-8c7f-4657-b156-e7cc7c6205f9)  <br/>
 
 Install the app in the NDES Server: `MicrosoftEntraPrivateNetworkConnectorInstaller.msi`  <br/>
@@ -18,7 +18,7 @@ Add the below settings: <br/>
 ![image](https://github.com/user-attachments/assets/d4dba27d-e574-43b9-bf0c-76bcfc1a3d9e) <br/>
 ![image](https://github.com/user-attachments/assets/ad5dec02-a5e7-470a-bf0e-971e7a3ac874) <br/>
 then click create.
-if you go to the External URL, you should be able to hit the IIS Default site, 
+if you go to the External URL, you should be able to hit the IIS Default site, <br/>
 while having a certificate from Entra Proxy ie. https://ndesproxy1-mngenvmcap153138.msappproxy.net/<br/>
 ![image](https://github.com/user-attachments/assets/32e28540-3441-423b-b782-12fd06f5e69a) <br/>
 
@@ -28,8 +28,7 @@ ie: [https://ndesproxy1-mngenvmcap153138.msappproxy.net//certsrv/mscep/mscep.dll
 If this is done correctly then you should be able to see the below:  <br/>
 ![image](https://github.com/user-attachments/assets/37159be9-7e20-4d78-953c-1999b75b11f2) <br/>
 
-it is expected by design to get the error from the Ndes server this time, as opposed getting the 403 error from the browser itself.
-
-👉Tip: re-configing the app.
-Uninstall the app from the server then you will see the URL will become inactive after few minutes, 
-then re-install the app then you will see the app being able to edit.
+it is expected by design to get the 403 error from the Ndes server this time, as opposed getting the 404 error. <br/>
+👉Tip: re-configing the app.<br/>
+Uninstall the app from the server then you will see the URL will become inactive after few minutes, <br/>
+then re-install the app then you will see the app being able to edit.<br/>
