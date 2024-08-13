@@ -23,7 +23,7 @@ while having a certificate from Entra Proxy ie. https://ndesproxy1-mngenvmcap153
 ![image](https://github.com/user-attachments/assets/32e28540-3441-423b-b782-12fd06f5e69a) <br/>
 
 The URL that you will use towards the scep would be `External URL + /certsrv/mscep/mscep.dll` <br/>
-ie: [https://ndesproxy1-mngenvmcap153138.msappproxy.net//certsrv/mscep/mscep.dll]
+ie: [https://ndesproxy1-mngenvmcap153138.msappproxy.net/certsrv/mscep/mscep.dll]
 
 If this is done correctly then you should be able to see the below:  <br/>
 ![image](https://github.com/user-attachments/assets/37159be9-7e20-4d78-953c-1999b75b11f2) <br/>
