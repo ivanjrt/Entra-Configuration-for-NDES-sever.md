@@ -1,0 +1,1 @@
+# Entra-Configuration-for-NDES-sever.md
